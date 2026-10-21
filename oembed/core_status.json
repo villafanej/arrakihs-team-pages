@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "type": "rich",
+  "provider_name": "ARRAKIHS team tables",
+  "title": "Core status",
+  "width": 600,
+  "height": 200,
+  "html": "<blockquote><a href=\"https://villafanej.github.io/arrakihs-team-pages/team/core_status.html\">Core status</a></blockquote><iframe src=\"https://villafanej.github.io/arrakihs-team-pages/team/core_status.html\" width=\"100%\" height=\"200\" title=\"Core status\" frameborder=\"0\"></iframe>"
+}

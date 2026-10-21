@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Team Tables</title>
+<style>
+	body { font-family: sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 16px; color: #222; }
+	code { background: #eee; padding: 2px 4px; word-break: break-all; }
+	iframe { width: 100%; border: 1px dashed #bbb; }
+</style>
+</head>
+<body>
+<h1>Team tables</h1>
+<p>Paste a link on a line by itself in an Elementor <b>Text Editor</b> widget.</p>
+<h2>Core status</h2>
+<p><code>https://villafanej.github.io/arrakihs-team-pages/team/core_status.html</code></p>
+<iframe class="preview" data-src="team/core_status.html" sandbox="allow-scripts" height="200" title="Core status preview"></iframe>
+
+<h2>Executive role</h2>
+<p><code>https://villafanej.github.io/arrakihs-team-pages/team/executive_role.html</code></p>
+<iframe class="preview" data-src="team/executive_role.html" sandbox="allow-scripts" height="200" title="Executive role preview"></iframe>
+
+<h2>Instrument management status</h2>
+<p><code>https://villafanej.github.io/arrakihs-team-pages/team/instrument_management_status.html</code></p>
+<iframe class="preview" data-src="team/instrument_management_status.html" sandbox="allow-scripts" height="200" title="Instrument management status preview"></iframe>
+
+<h2>Instrument po status</h2>
+<p><code>https://villafanej.github.io/arrakihs-team-pages/team/instrument_po_status.html</code></p>
+<iframe class="preview" data-src="team/instrument_po_status.html" sandbox="allow-scripts" height="200" title="Instrument po status preview"></iframe>
+
+<h2>Instrument team</h2>
+<p><code>https://villafanej.github.io/arrakihs-team-pages/team/instrument_team.html</code></p>
+<iframe class="preview" data-src="team/instrument_team.html" sandbox="allow-scripts" height="200" title="Instrument team preview"></iframe>
+
+<h2>Iosdc management status</h2>
+<p><code>https://villafanej.github.io/arrakihs-team-pages/team/iosdc_management_status.html</code></p>
+<iframe class="preview" data-src="team/iosdc_management_status.html" sandbox="allow-scripts" height="200" title="Iosdc management status preview"></iframe>
+
+<h2>Iosdc po status</h2>
+<p><code>https://villafanej.github.io/arrakihs-team-pages/team/iosdc_po_status.html</code></p>
+<iframe class="preview" data-src="team/iosdc_po_status.html" sandbox="allow-scripts" height="200" title="Iosdc po status preview"></iframe>
+
+<h2>Iosdc team</h2>
+<p><code>https://villafanej.github.io/arrakihs-team-pages/team/iosdc_team.html</code></p>
+<iframe class="preview" data-src="team/iosdc_team.html" sandbox="allow-scripts" height="200" title="Iosdc team preview"></iframe>
+
+<h2>Science management status</h2>
+<p><code>https://villafanej.github.io/arrakihs-team-pages/team/science_management_status.html</code></p>
+<iframe class="preview" data-src="team/science_management_status.html" sandbox="allow-scripts" height="200" title="Science management status preview"></iframe>
+
+<h2>Science po status</h2>
+<p><code>https://villafanej.github.io/arrakihs-team-pages/team/science_po_status.html</code></p>
+<iframe class="preview" data-src="team/science_po_status.html" sandbox="allow-scripts" height="200" title="Science po status preview"></iframe>
+
+<h2>Science team</h2>
+<p><code>https://villafanej.github.io/arrakihs-team-pages/team/science_team.html</code></p>
+<iframe class="preview" data-src="team/science_team.html" sandbox="allow-scripts" height="200" title="Science team preview"></iframe>
+
+<script>
+	/* Give each preview a secret in its address, like WordPress does. */
+	document.querySelectorAll('iframe.preview').forEach(function (frame) {
+		var secret = Math.random().toString(36).slice(2, 12) || 'preview000';
+		frame.setAttribute('data-secret', secret);
+		frame.src = frame.getAttribute('data-src') + '#?secret=' + secret;
+	});
+
+	/* Resize the frame that reported its height, within WordPress's limits. */
+	window.addEventListener('message', function (e) {
+		var data = e.data || {};
+		if (data.message !== 'height') {
+			return;
+		}
+		document.querySelectorAll('iframe.preview').forEach(function (frame) {
+			if (frame.contentWindow === e.source && frame.getAttribute('data-secret') === data.secret) {
+				frame.height = Math.min(1000, Math.max(200, parseInt(data.value, 10) || 0));
+			}
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/*
+ * What the embedded tables inherit. The cells carry their own colors,
+ * weights and padding (inline styles from generate_team_tables.py);
+ * a frame can't inherit the WordPress page's font, so it is set here.
+ * Change font-family / font-size here if they don't match the site.
+ */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}

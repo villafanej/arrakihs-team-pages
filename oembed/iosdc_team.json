@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "type": "rich",
+  "provider_name": "ARRAKIHS team tables",
+  "title": "Iosdc team",
+  "width": 600,
+  "height": 200,
+  "html": "<blockquote><a href=\"https://villafanej.github.io/arrakihs-team-pages/team/iosdc_team.html\">Iosdc team</a></blockquote><iframe src=\"https://villafanej.github.io/arrakihs-team-pages/team/iosdc_team.html\" width=\"100%\" height=\"200\" title=\"Iosdc team\" frameborder=\"0\"></iframe>"
+}

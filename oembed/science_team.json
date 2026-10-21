@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "type": "rich",
+  "provider_name": "ARRAKIHS team tables",
+  "title": "Science team",
+  "width": 600,
+  "height": 200,
+  "html": "<blockquote><a href=\"https://villafanej.github.io/arrakihs-team-pages/team/science_team.html\">Science team</a></blockquote><iframe src=\"https://villafanej.github.io/arrakihs-team-pages/team/science_team.html\" width=\"100%\" height=\"200\" title=\"Science team\" frameborder=\"0\"></iframe>"
+}
